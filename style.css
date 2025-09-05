@@ -188,7 +188,7 @@ body {
 }
 
 .left{
-    width: 23%;
+    width: 25%;
     margin: 5px;
     border-radius: 10px;
     background-color: var(--secondaryBackgroundColor);
@@ -204,12 +204,20 @@ body {
     gap: 10px;
 }
 
+.library-list{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
 .library-card{
+    font-size: 12px;
     filter: invert(1);
     display: flex;
     justify-content:space-around;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     width: 95%;
     border: 2px solid black;
     border-radius: 10px;
@@ -235,7 +243,7 @@ body {
 
 
 .right{
-    width: 73%;
+    width: 75%;
     margin: 5px;
     border-radius: 10px;
     background-color: var(--secondaryBackgroundColor);
@@ -257,7 +265,7 @@ body {
     background-color: var(--primaryBackgroundColor);
     padding: 20px;
     gap: 10px;
-    overflow: scroll;
+    overflow: auto;
 
 }
 
@@ -334,6 +342,10 @@ body {
     width: 33%;
 }
 
+#seekbar{
+    transition: width 0.3s ease-in-out;
+}
+
 .dura-vol{
     display: flex;
     flex-direction: column;
@@ -345,6 +357,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .vol{
     display: flex;
@@ -379,13 +392,13 @@ body {
     color: white;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 65vh;
     background-color: var(--secondaryBackgroundColor);
     flex-direction: column;
 }
 
 .footer > div{
-    margin: 5px;
+    margin: 10px;
 }
 
 .icons *{
